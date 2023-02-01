@@ -94,6 +94,7 @@ h1 {
     color: #fff;
     border: #fff 2px solid;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #rules {
@@ -109,6 +110,10 @@ h1 {
     opacity: 0;
 }
 
+.rules--on {
+    opacity: 1;
+}
+
 h2 {
     text-align: center;
 }
@@ -117,4 +122,5 @@ span {
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
+    cursor: pointer;
 }
