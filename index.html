@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Game : Rock Paper Scissors</title>
   </head>
   <body>
@@ -19,26 +19,30 @@
     </header>
 
     <main>
-        <section id="first-stape">
-            <div class="element" id="element-paper">
-            <img src="./images/Paper.png" alt="paper" id="paper" />
+        <section id="first-stage">
+            <div id="first-raw">
+                <div class="element element-choice" id="element-paper">
+                    <img src="./images/Paper.png" alt="paper" class="paper" />
+                </div>
             </div>
-            <div class="element" id="element-rock">
-            <img src="./images/Rock.png" alt="rock" id="rock" />
+            <div class="element element-choice" id="element-rock">
+                <img src="./images/Rock.png" alt="rock" class="rock" />
             </div>
-            <div class="element" id="element-scissors">
-            <img src="./images/Scissors.png" alt="scissors" id="scissors" />
+            <div class="element element-choice" id="element-scissors">
+                <img src="./images/Scissors.png" alt="scissors" class="scissors" />
             </div>
         </section>
 
-        <section id="second-stape" >
+        <section id="second-stage" >
             <div id="result" >
-                <div class="element element-result"><img src="" alt="user choice" id="user-choice" /></div>
-                <div>
-                    <h2>Result</h2>
-                    <button>Play again</button>
+                <div class="element element-result" id="user-result">
                 </div>
-                <div class="element element-result"><img src="" alt="random choice" id="random-choice" /></div>
+                <div>
+                    <h2 id="result-announcement">Result</h2>
+                    <button id="reset">Play again</button>
+                </div>
+                <div class="element element-result" id="random-result">
+                </div>
             </div>
         </section>
 
@@ -66,5 +70,6 @@
 
     <script src="./js/app.js"></script>
     <script src="./js/rules.js"></script>
+    <script src="./js/game.js"></script>
   </body>
 </html>

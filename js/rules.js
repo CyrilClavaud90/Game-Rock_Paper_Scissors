@@ -11,10 +11,12 @@ const rules = {
     showTheRules: function() {
         const rulesDiv = document.querySelector('#rules');
         rulesDiv.style.opacity = "1";
+        rulesDiv.style.zIndex = "5";
     },
 
     hideTheRules: function() {
         const rulesDiv = document.querySelector('#rules');
         rulesDiv.style.opacity = "0";
+        rulesDiv.style.zIndex = "-1";
     }
 };
