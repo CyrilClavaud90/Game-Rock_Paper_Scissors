@@ -126,8 +126,7 @@ const game = {
         firstStage.style.display = "block";
         secondStage.style.display = "none";
 
-        // Retirer la class de la div
-        // Retirer l'image
+        // Remise à zéro de la partie résultat
         const random = document.querySelector('#random-result');
         random.classList.remove("element-rock", "element-paper", "element-scissors")
         const randomImage = document.querySelector('#random-result > img');
