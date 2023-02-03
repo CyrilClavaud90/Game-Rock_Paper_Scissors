@@ -16,4 +16,4 @@ Le résultat du jeu est déterminé par l'application de trois règles simples :
 - les ciseaux gagnent face au papier
 - le papier gagne face à la pierre
 
-Lien vers l'application :
+Lien vers l'application : https://cyrilclavaud90.github.io/Game-Rock_Paper_Scissors/
