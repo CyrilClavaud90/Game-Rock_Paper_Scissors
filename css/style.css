@@ -1,0 +1,190 @@
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: #1d393e;
+    text-align: center;
+    width: 100%;
+}
+
+#contener {
+    position: relative;
+    background-color: #1bcdf1;
+    min-height: 100vh;
+    height: auto;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/* ===== Header ====== */
+
+h1 {
+    border: #fff 2px solid;
+    border-radius: 5px;
+    padding: 0.8rem 2rem;
+    margin: 2rem auto;
+    display: inline-block;
+    color: #fff;
+}
+
+
+/* ===== Main ===== */
+/* ===== 1ere section ===== */
+
+#first-stage {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    display: block;
+}
+
+.element {
+    width: 11rem;
+    height: 11rem;
+    border: solid 8px #fff;
+    border-radius: 50%;
+}
+
+#first-raw {
+    margin: 0 auto 6rem;
+}
+
+#element-rock, 
+#element-scissors, 
+#element-paper {
+    display: inline-block;
+    cursor: pointer;
+}
+
+#element-rock {
+    margin-right: 9rem;
+}
+
+.paper {
+    height: 8rem;
+    margin-top: 1.5rem;
+}
+
+.rock {
+    height: 6rem;
+    margin-top: 2.5rem;
+}
+
+.scissors {
+    height: 6rem;
+    margin-top: 2.5rem;
+}
+
+
+/* ===== 2e section ===== */
+
+#second-stage {
+    margin-bottom: 5rem;
+    display: none;
+}
+
+.element-result {
+    display: inline-block;
+    margin: 2rem auto 0;
+}
+
+#result-announcement {
+    color: #fff;
+}
+
+#reset {
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    background-color: #fff;
+    color: #0EB1D2;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+/* ===== 3e section ===== */
+
+#bouton-rules {
+    display: inline;
+    padding: 0.2rem 1rem;
+    color: #fff;
+    border: #fff 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#rules {
+    position: absolute;
+    top: 15rem;
+    left: 25%;
+    align-items: center;
+    width: 40%;
+    padding: 1rem 5%;
+    border-radius: 5px;
+    text-align: justify;
+    background-color: antiquewhite;
+    opacity: 0;
+    z-index: -1;
+}
+
+h2 {
+    text-align: center;
+}
+
+span {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+}
+
+
+/* ===== Media Queries ====== */
+
+@media screen and (max-width: 1080px) {
+    #contener {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    h1 {
+        padding: 0.8rem 2rem;
+        margin: 3rem 1rem 2rem;
+    }
+
+    .element {
+        width: 8rem;
+        height: 8rem;
+        border: solid 4px #fff;
+        border-radius: 50%;
+    }
+
+    #first-raw {
+        margin: 0 auto 3rem;
+    }
+
+    #element-rock {
+        margin-right: 2rem;
+    }
+    
+    .paper {
+        height: 5rem;
+        margin-top: 1.5rem;
+    }
+    
+    .rock {
+        height: 4rem;
+        margin-top: 2rem;
+    }
+    
+    .scissors {
+        height: 4rem;
+        margin-top: 2rem;
+    }
+
+    #rules {
+        top: 11rem;
+        left: 10%;
+        width: 70%;
+    }
+}
